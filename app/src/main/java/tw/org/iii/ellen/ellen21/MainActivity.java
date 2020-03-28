@@ -1,4 +1,5 @@
 package tw.org.iii.ellen.ellen21;
+//WebView 嵌入html網頁畫面,網頁內部可與手機其他功能互動及傳遞資料(ex:相機、GPS)
 
 import androidx.appcompat.app.AppCompatActivity;
 

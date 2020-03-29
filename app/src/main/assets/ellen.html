@@ -10,6 +10,7 @@
     <h1>Ellen</h1>
     <hr>
     <img src="img/one.png">
+    <a href="map.html" type="button">Map</a>
     <hr>
     <button type="button" onclick="test1()" class="btn btn-info btn-sm">
         btn1
@@ -19,6 +20,11 @@
 
     <button type="button" onclick="test2()" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exampleModal">
         btn2
+    </button>
+    <hr>
+    <input type="text" id="urname">
+    <button type="button" onclick="test3()" class="btn btn-success btn-sm">
+        btn3
     </button>
 
 
@@ -52,10 +58,16 @@
         function test1(max=49){
             let n = parseInt(max);
             here.innerHTML = Math.floor(Math.random()*n+1);
+            console.log(max) ;
         }
 
         function test2(){
             alert("OK") ;
+        }
+
+        function test3(){
+            myJSObject.callFromJS(urname.value) ;
+            <!-- myJSObject已被Activity創出並介紹給WebView,所以myJSObject是個隱含物件      -->
         }
 
     </script>
